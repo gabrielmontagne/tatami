@@ -1,0 +1,19 @@
+caption: {{$:/core/images/close-others-button}} {{$:/language/Buttons/CloseOthers/Caption}}
+created: 20250404212143678
+description: {{$:/language/Buttons/CloseOthers/Hint}}
+modified: 20250404212145550
+tags: $:/tags/ViewToolbar $:/tags/EditToolbar
+title: $:/core/ui/Buttons/close-others
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<$button message="tm-close-other-tiddlers" param=<<currentTiddler>> tooltip={{$:/language/Buttons/CloseOthers/Hint}} aria-label={{$:/language/Buttons/CloseOthers/Caption}} class=<<tv-config-toolbar-class>>>
+<%if [<tv-config-toolbar-icons>match[yes]] %>
+{{$:/core/images/close-others-button}}
+<%endif%>
+<%if [<tv-config-toolbar-text>match[yes]] %>
+<span class="tc-btn-text">
+<$text text={{$:/language/Buttons/CloseOthers/Caption}}/>
+</span>
+<%endif%>
+</$button>

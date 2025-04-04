@@ -1,0 +1,6 @@
+created: 20250403233412564
+modified: 20250403233412961
+title: $:/themes/tiddlywiki/vanilla/settings/codefontfamily
+type: text/vnd.tiddlywiki
+
+"cmu_typewriter_textlight", ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace

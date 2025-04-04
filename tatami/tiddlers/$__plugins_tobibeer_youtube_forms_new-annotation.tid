@@ -1,0 +1,39 @@
+created: 20150108144744686
+modified: 20150110021327492
+summary: a form to add a new annotations to a video
+tags: 
+title: $:/plugins/tobibeer/youtube/forms/new-annotation
+type: text/vnd.tiddlywiki
+
+<$tiddler tiddler="$:/temp/yt">
+<$edit-text field=start size=10 placeholder="start hh:mm:ss"/>
+<$edit-text field=end size=10 placeholder="end hh:mm:ss"/>
+<$set name=yt-start value={{!!start}}>
+<$set name=yt-end value={{!!end}}>
+<$tiddler tiddler=<<yt>>>
+<$fieldmangler>
+<$button>add
+<$action-setfield $field=title $value=<<currentTiddler>>/>
+<$action-setfield $field=tags $value={{$:/temp/yt!!tags-plain}}/>
+<$action-setfield $field=yt-video $value=<<yt-video>>/>
+<$action-setfield $field=yt-id $value=<<yt-id>>/>
+<$action-setfield $field=yt-start $value={{$:/temp/yt!!start}}/>
+<$action-setfield $field=yt-end $value={{$:/temp/yt!!end}}/>
+<$action-setfield $field=yt-annotation $value={{$:/temp/yt!!annotation}}/>
+<$action-setfield $field=text $value={{$:/temp/yt!!text}}/>
+<$action-setfield $tiddler="$:/temp/yt" start={{$:/temp/yt!!end}} annotation="" text="" tags-plain=""/>
+</$button>
+</$fieldmangler>
+</$tiddler>
+</$set>
+</$set>
+<$button>set
+<$action-setfield $tiddler=<<yt-video>> yt-start={{!!start}} yt-end={{!!end}}/>
+</$button>
+<$button>reset
+<$action-setfield $tiddler=<<yt-video>> yt-start="" yt-end=""/>
+</$button>
+<$edit-text field=annotation class=tc-edit-texteditor placeholder="title"/>
+<$edit-text field=tags-plain class=tc-edit-texteditor placeholder="tags"/>
+<$edit-text field=text class=tc-edit-texteditor placeholder="text" default=""/>
+</$tiddler>

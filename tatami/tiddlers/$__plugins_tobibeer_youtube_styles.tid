@@ -1,0 +1,74 @@
+created: 20150108140154981
+list-after: $:/core/ui/ViewTemplate/tags
+modified: 20150110155544431
+summary: css stylesheet for the package
+tags: $:/tags/Stylesheet
+title: $:/plugins/tobibeer/youtube/styles
+type: text/vnd.tiddlywiki
+
+.ytc-add-annotation > span > button{
+float:right;
+font-size:2em;
+padding:0 15px;
+color:grey;
+}
+
+.ytc-add-annotation > span > button:hover{
+color:inherit;
+text-decoration:none;
+}
+
+.ytc-add-annotation .slider-contents {
+margin:0;
+}
+
+.ytc-annotations-toggle-tags{
+float:right;
+margin-top: 2px;
+}
+
+.ytc-annotations{
+margin-top:20px;
+}
+
+.ytc-annotation-title{
+color:grey;
+font-style:italic;
+margin-bottom:1em;
+}
+
+.ytc-annotation-tags {
+}
+
+.ytc-annotation-tags .tc-tags-wrapper{
+margin: 0 0 0 30px;
+}
+
+.ytc-annotation-tags .tc-tag-list-item{
+margin: 0;
+}
+
+button.tc-tiddlylink.ytc-annotation-time{
+color: <<colour tiddler-controls-foreground>>;
+}
+
+.ytc-annotation.tc-tiddler-controls{
+float:none;
+}
+
+.ytc-no-controls button{
+display:none;
+}
+
+.ytc-no-controls .tc-tiddlylink,
+.ytc-no-controls .tc-tag-label {
+display:inline;
+}
+
+.ytc-no-controls .tc-tags-wrapper{
+margin: 0;
+}
+
+.ytc-tiddler-anno-video{
+margin-top:10px;
+}

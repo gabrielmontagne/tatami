@@ -1,0 +1,13 @@
+.tc-tiddler-preview-hidden.tc-tiddler-editor {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.tc-tiddler-frame .tc-tiddler-editor.tc-tiddler-preview {
+	grid-template-areas:  "editor preview" "toolbar toolbar"  ;
+}
+
+.tc-dropzone-editor > .tc-reveal {
+  display: flex;
+  flex-direction: column-reverse;
+}

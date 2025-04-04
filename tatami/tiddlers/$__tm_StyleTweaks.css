@@ -1,0 +1,17 @@
+.tc-body {
+	text-align: justify;
+	hyphens: auto;
+	letter-spacing: 0.05em;
+}
+
+.tc-titlebar {
+	text-align: left;
+}
+
+pre {
+	text-align: left;
+}
+
+button.tc-tag-label, span.tc-tag-label {
+	background-color: #CCC;
+}

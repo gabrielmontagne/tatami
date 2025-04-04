@@ -1,0 +1,36 @@
+button-template: $:/PSaT/create-buttons/template/click
+button-template-info: A button that copies the tiddler name to the clipboard
+caption: {{$:/core/images/copy-clipboard}}
+created: 20200301101911068
+description: A button that copies the currentTiddler name to the clipboard
+icon: $:/core/images/copy-clipboard
+list-before: $:/core/ui/Buttons/edit
+modified: 20210612235134820
+tags: $:/tags/ViewToolbar
+title: $:/PSaT/button/copy-title
+type: text/vnd.tiddlywiki
+
+\define show-button-filter() [all[current]]
+\define button-caption() copy current tiddler title to the clipboard
+\define tooltip() Copy the Current title to the clipboard
+\define button-icon() $:/core/images/copy-clipboard
+\define click-button-actions()
+<<action-notify>>
+\end
+\whitespace trim
+<!-- Nothing to set below here except tiddler fields caption, description and optionaly list-before -->
+<$list filter=<<show-button-filter>> variable=nul>
+	<$button  message="tm-copy-to-clipboard" param={{!!title}} actions=<<custom-button-actions>> tooltip=<<tooltip>> 
+		class=<<tv-config-toolbar-class>> >
+        <$action-setfield $tiddler="$:/temp/pastebox/title" text={{!!title}}/>
+		<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+			<$transclude tiddler=<<button-icon>> mode=inline/>
+ 		</$list>
+		<$list filter="[<tv-config-toolbar-text>match[yes]]">
+			<span class="tc-btn-text">
+			<$text text=" "/>
+	   	<$text text=<<button-caption>>/>
+			</span>
+		</$list>
+	</$button>
+</$list>

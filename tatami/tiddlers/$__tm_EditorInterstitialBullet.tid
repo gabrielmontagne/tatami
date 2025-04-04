@@ -1,0 +1,22 @@
+caption: Today
+condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
+created: 20240108100439510
+description: Add an interstitial bullet
+icon: $:/core/images/list-bullet
+modified: 20250404013545558
+shortcuts: ((interstitial-bullet))
+tags: $:/tags/EditorToolbar
+title: $:/tm/EditorInterstitialBullet
+type: text/vnd.tiddlywiki
+
+\define today() * ''$(date)$'' 
+<$vars 
+date=<<now "0hh:0mm">>
+>
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="insert-text"
+	text=<<today>>
+/>			
+			
+</$vars>

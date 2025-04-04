@@ -1,0 +1,22 @@
+caption: Today
+condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
+created: 20240501112118742
+description: Add an Nausikaa bullet
+icon: $:/core/images/list-bullet
+modified: 20240501114228986
+shortcuts: ((nausikaa-bullet))
+tags: $:/tags/EditorToolbar Nausikaa
+title: $:/tm/EditorNausikaaBullet
+type: text/vnd.tiddlywiki
+
+\define item() [ ] $(date)$ 
+<$vars 
+date=<<now "YY0MM0DD0hh0mm">>
+>
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="insert-text"
+	text=<<item>>
+/>			
+			
+</$vars>

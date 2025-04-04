@@ -1,0 +1,35 @@
+created: 20150109120004264
+modified: 20150111013908462
+summary: lists all annotations for a video tiddler
+tags: 
+title: $:/plugins/tobibeer/youtube/list/annotations
+type: text/vnd.tiddlywiki
+
+<div class="ytc-annotations-toggle-tags">
+<$reveal type=match state="$:/state/yt/tags" text="">
+<$button class="tc-tiddlylink tc-btn-invisible" set="$:/state/yt/tags" setTo="show">tags</$button>
+</$reveal>
+<$reveal type=nomatch state="$:/state/yt/tags" text="">
+<$button class="tc-tiddlylink tc-btn-invisible" set="$:/state/yt/tags" setTo="">- tags</$button>
+</$reveal>
+</div>
+<div class="ytc-annotations">
+<$list filter="[field:yt-id<yt-id>sort[yt-end]sort[yt-start]]-[[$:/temp/yt]]-[has[draft.of]]-[yt-id<yt-id>!has[yt-video]]">
+<div class="ytc-annotation tc-tiddler-controls">
+{{||$:/core/ui/Buttons/delete}} {{||$:/core/ui/Buttons/clone}}
+<$button class='ytc-annotation-time tc-btn-invisible tc-tiddlylink'>
+<$action-setfield $tiddler=<<yt-video>> yt-start={{!!yt-start}} yt-end={{!!yt-end}}/>
+{{!!yt-start}} - {{!!yt-end}}
+</$button>
+<$link>
+<$view field=yt-annotation>...</$view>
+</$link>
+{{||$:/core/ui/Buttons/edit}}
+<$reveal type=nomatch state="$:/state/yt/tags" text="">
+<$list filter="[all[current]tags[]limit[1]]" variable=tags>
+<div class="ytc-annotation-tags">{{||$:/core/ui/ViewTemplate/tags}}</div>
+</$list>
+</$reveal>
+</div>
+</$list>
+</div>
