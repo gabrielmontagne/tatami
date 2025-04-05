@@ -12,6 +12,52 @@ pre {
 	text-align: left;
 }
 
+.tc-tiddler-view-frame table {
+	width: 100%;
+}
+
 button.tc-tag-label, span.tc-tag-label {
 	background-color: #CCC;
+}
+
+
+cite {
+	font-style: normal;
+	font-size: 0.9em;
+}
+
+cite:before {
+    content:  '— ';
+		font-size: .5em;
+}
+
+iframe {
+	border:none;
+	width: 100%;
+}
+
+textarea {
+	font-family: cmu_typewriter_textlight;
+}
+
+.tc-drafts-list {
+	margin: 20px;
+	position: static;
+}
+
+.tc-drafts-list a.tc-tiddlylink, 
+.py-due-date.py-overdue
+{
+	background: rgb(143, 0, 0);
+	border: none;
+	text-decoration: none;	
+	white-space: nowrap;
+	color: white;
+	border-radius: 0px;
+}
+
+.tc-drafts-list a.tc-tiddlylink {
+	display: inline-block;
+	padding: 6px;
+	margin: 5px;
 }

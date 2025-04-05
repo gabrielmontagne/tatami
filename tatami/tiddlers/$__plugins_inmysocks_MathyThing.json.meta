@@ -1,0 +1,9 @@
+author: inmysocks
+core-version: >=5.0.8
+dependents: 
+description: Some basic math operations for TiddlyWiki
+plugin-type: plugin
+source: https://github.com/inmysocks/TW5-MathyThing
+title: $:/plugins/inmysocks/MathyThing
+type: application/json
+version: 0.2.1
