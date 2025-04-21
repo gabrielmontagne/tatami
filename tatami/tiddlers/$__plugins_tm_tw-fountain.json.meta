@@ -1,0 +1,10 @@
+author: gabriel montagné
+core-version: >=5.0.0
+dependents: 
+description: Fountain screenplay support
+list: readme usage example
+plugin-type: plugin
+source: https://github.com/gabrielmontange/tw-fountain
+title: $:/plugins/tm/tw-fountain
+type: application/json
+version: 0.0.1
