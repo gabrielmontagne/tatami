@@ -14,8 +14,10 @@ To run the wiki:
 
 [source,bash]
 ----
-make run
+tiddlywiki tatami --listen port=8085 root-tiddler=$$:/core/save/lazy-images 
 ----
+
+... or use the included Makefile.
 
 This will serve the wiki on http://localhost:8085
 
