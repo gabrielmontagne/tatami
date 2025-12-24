@@ -1,6 +1,6 @@
 = Tatami: TiddlyWiki Starter
 
-A Node.js-based, styled, and batteries-included TiddlyWiki starter template configured for external images and binary assets, making it ready for image-heavy workflows.
+A Node.js-based, styled, and batteries-included https://tiddlywiki.com/[TiddlyWiki] starter template configured for external images and binary assets, making it ready for image-heavy workflows.
 
 == Prerequisites
 
@@ -17,7 +17,7 @@ To run the wiki:
 tiddlywiki tatami --listen port=8085 root-tiddler=$$:/core/save/lazy-images 
 ----
 
-... or use the included Makefile.
+You could also use the included `Makefile` and `make run`.
 
 This will serve the wiki on http://localhost:8085
 
