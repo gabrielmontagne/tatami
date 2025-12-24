@@ -1,0 +1,23 @@
+.tf-tr {
+ position: relative;
+ padding: 0.1em;
+}
+
+.tf-tr:hover {
+ background-color: #0000000f;
+}
+
+.tf-autolink {
+ font-size: 50%;
+ display: block;
+ position: absolute;
+ top: -0.25em;
+}
+
+.tf-b {
+ right: -0.25em;
+}
+
+.tf-i {
+ right: -1em;
+}

@@ -1,0 +1,8 @@
+code-body: yes
+created: 20251017122130747
+modified: 20251017122522252
+tags: 
+title: tr
+type: text/vnd.tiddlywiki
+
+<div class="tf-tr"><$transclude mode=block/><$button to={{!!title}} message="tm-edit-tiddler" class="tc-btn-invisible tf-autolink tf-b" tooltip={{{ [{!!title}addprefix[Modifier « ]addsuffix[ »]] }}}>🔗</$button></div>
