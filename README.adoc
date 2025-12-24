@@ -19,49 +19,21 @@ make run
 
 This will serve the wiki on http://localhost:8085
 
-== Installed Plugins
+== Included Plugins
 
-=== Code Editing & Syntax Highlighting
-
-* CodeMirror -- CodeMirror editor -- `$:/plugins/tiddlywiki/codemirror`
-* CodeMirror Autocomplete -- Autocompletion for CodeMirror -- `$:/plugins/tiddlywiki/codemirror-autocomplete`
-* CodeMirror Close Brackets -- Close brackets for CodeMirror -- `$:/plugins/tiddlywiki/codemirror-closebrackets`
-* CodeMirror Close Tag -- Close tags automatically for CodeMirror -- `$:/plugins/tiddlywiki/codemirror-closetag`
-* CodeMirror Keymap Vim -- Keymap compatible with Vim for CodeMirror -- `$:/plugins/tiddlywiki/codemirror-keymap-vim`
-* CodeMirror Mode CSS -- CSS highlighting mode for CodeMirror -- `$:/plugins/tiddlywiki/codemirror-mode-css`
-* CodeMirror Mode JavaScript -- JavaScript highlighting mode for CodeMirror -- `$:/plugins/tiddlywiki/codemirror-mode-javascript`
-* CodeMirror Mode TiddlyWiki Classic -- TiddlyWiki Classic highlighting mode for CodeMirror -- `$:/plugins/tiddlywiki/codemirror-mode-x-tiddlywiki`
-* CodeMirror Search and Replace -- Search and replace for CodeMirror -- `$:/plugins/tiddlywiki/codemirror-search-replace`
-* CodeMirror Show Trailing Space -- Show trailing space in CodeMirror -- `$:/plugins/tiddlywiki/codemirror-trailingspace`
-* Highlight -- Highlight.js syntax highlighting -- `$:/plugins/tiddlywiki/highlight`
-
-=== Wiki Enhancement
-
-* Shiraz Callout -- Admonitions for Shiraz -- `$:/plugins/kookma/shiraz-callout`
-* Refnotes -- References, citations, footnotes and abbreviations in TiddlyWiki -- `$:/plugins/kookma/refnotes`
-* tiddlystudy-references -- bidirectional linking -- `$:/plugins/wsb/tiddlystudy-references`
-* TiddlyWeb -- Sync changes from the browser to TW5 (node.js) or TiddlyWeb server -- `$:/plugins/tiddlywiki/tiddlyweb`
-* Relink -- Flexibility when relinking renamed tiddlers -- `$:/plugins/flibbles/relink`
-* Relink Titles -- Renames tiddlers with titles derived from Relinked tiddler -- `$:/plugins/flibbles/relink-titles`
-
-=== Fountain, Math & Formulas
-
-* MathyThing -- Some basic math operations for TiddlyWiki -- `$:/plugins/inmysocks/MathyThing`
-* KaTeX -- KaTeX library for mathematical typography -- `$:/plugins/tiddlywiki/katex`
-* TiddlyFormula -- Spreadsheet-like formulas in TiddlyWiki -- `$:/plugins/ebalster/formula`
-* tw-fountain -- Fountain screenplay support -- `$:/plugins/tm/tw-fountain`
-
-=== Utilities
-
-* shuffle -- A Shuffle filter operator -- `$:/plugins/midknighz/shuffle`
-* Disclosure HTML element -- DetailsWidget -- `$:/plugins/lslinger/details`
-* Kara -- Small plain checklist and interstitial journaling -- `$:/plugins/kookma/kara`
-* Edit Buttons -- Save & close / Cancel & close / Save & keep open -- `$:/plugins/lslinger/EditButtons`
-* Utility -- Small tools for authors and developers -- `$:/plugins/kookma/utility`
-
-=== Project Management & Development
-
-* Projectify -- Simple and Beautiful project management in TiddlyWiki -- `$:/plugins/nico/projectify`
-* Filesystem -- Synchronize changes from the node.js server to the local filesystem -- `$:/plugins/tiddlywiki/filesystem`
-* ImportToExternalFile -- Save binary files to the files folder on node.js -- `$:/plugins/sq/ImportToExternalFile`
+* Disclosure HTML element: DetailsWidget `$:/plugins/telmiger/details`
+* Edit Buttons: Save & close / Cancel & close / Save & keep open `$:/plugins/telmiger/EditButtons`
+* ImportToExternalFile: Save binary files to the files folder on node.js `$:/plugins/sq/ImportToExternalFile`
+* Kara: Small plain checklist and interstitial journaling `$:/plugins/kookma/kara`
+* MathyThing: Some basic math operations for TiddlyWiki `$:/plugins/inmysocks/MathyThing`
+* Projectify: Simple project management in TiddlyWiki `$:/plugins/nico/projectify`
+* Refnotes: References, citations, footnotes and abbreviations in Tiddlywiki `$:/plugins/kookma/refnotes`
+* Relink Titles: Renames tiddlers with titles derived from Relinked tiddler `$:/plugins/flibbles/relink-titles`
+* Relink: Flexibility when relinking renamed tiddlers `$:/plugins/flibbles/relink`
+* Shiraz Callout: Admonitions for Shiraz `$:/plugins/kookma/shiraz-callout`
+* TiddlyFormula: Spreadsheet-like formulas in TiddlyWiki. `$:/plugins/ebalster/formula`
+* Utility: Small tools for authors and developers `$:/plugins/kookma/utility`
+* shuffle: A Shuffle filter operator `$:/plugins/mklauber/shuffle`
+* tiddlystudy-references: bidirectional linking `$:/plugins/kebi/tiddlystudy-references`
+* tw-fountain: Fountain screenplay support `$:/plugins/tm/tw-fountain`
 
