@@ -23,6 +23,7 @@ This will serve the wiki on http://localhost:8085
 
 == Included Plugins
 
+* BibTeX:  BibTex importer `$:/plugins/tiddlywiki/bibtex`
 * Disclosure HTML element: DetailsWidget `$:/plugins/telmiger/details`
 * Edit Buttons: Save & close / Cancel & close / Save & keep open `$:/plugins/telmiger/EditButtons`
 * ImportToExternalFile: Save binary files to the files folder on node.js `$:/plugins/sq/ImportToExternalFile`
