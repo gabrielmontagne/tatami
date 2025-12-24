@@ -23,44 +23,45 @@ This will serve the wiki on http://localhost:8085
 
 === Code Editing & Syntax Highlighting
 
-* https://github.com/adithya-badidey/codemirror-widget[CodeMirror] -- CodeMirror editor
-* https://github.com/adithya-badidey/codemirror-autocomplete[CodeMirror Autocomplete] -- Autocompletion for CodeMirror
-* https://github.com/adithya-badidey/codemirror-closebrackets[CodeMirror Close Brackets] -- Auto-close brackets
-* https://github.com/adithya-badidey/codemirror-closetag[CodeMirror Close Tag] -- Auto-close tags
-* https://github.com/adithya-badidey/codemirror-keymap-vim[CodeMirror Keymap Vim] -- Vim keybindings
-* https://github.com/adithya-badidey/codemirror-mode-css[CodeMirror Mode CSS] -- CSS syntax highlighting
-* https://github.com/adithya-badidey/codemirror-mode-javascript[CodeMirror Mode JavaScript] -- JavaScript syntax highlighting
-* https://github.com/adithya-badidey/codemirror-mode-tiddlywiki[CodeMirror Mode TiddlyWiki Classic] -- TiddlyWiki Classic syntax highlighting
-* https://github.com/adithya-badidey/codemirror-search-replace[CodeMirror Search and Replace] -- Search and replace functionality
-* https://github.com/adithya-badidey/codemirror-trailingspace[CodeMirror Show Trailing Space] -- Highlight trailing whitespace
-* https://github.com/adithya-badidey/highlight[Highlight] -- Highlight.js syntax highlighting
+* CodeMirror -- CodeMirror editor -- `$:/plugins/tiddlywiki/codemirror`
+* CodeMirror Autocomplete -- Autocompletion for CodeMirror -- `$:/plugins/tiddlywiki/codemirror-autocomplete`
+* CodeMirror Close Brackets -- Close brackets for CodeMirror -- `$:/plugins/tiddlywiki/codemirror-closebrackets`
+* CodeMirror Close Tag -- Close tags automatically for CodeMirror -- `$:/plugins/tiddlywiki/codemirror-closetag`
+* CodeMirror Keymap Vim -- Keymap compatible with Vim for CodeMirror -- `$:/plugins/tiddlywiki/codemirror-keymap-vim`
+* CodeMirror Mode CSS -- CSS highlighting mode for CodeMirror -- `$:/plugins/tiddlywiki/codemirror-mode-css`
+* CodeMirror Mode JavaScript -- JavaScript highlighting mode for CodeMirror -- `$:/plugins/tiddlywiki/codemirror-mode-javascript`
+* CodeMirror Mode TiddlyWiki Classic -- TiddlyWiki Classic highlighting mode for CodeMirror -- `$:/plugins/tiddlywiki/codemirror-mode-x-tiddlywiki`
+* CodeMirror Search and Replace -- Search and replace for CodeMirror -- `$:/plugins/tiddlywiki/codemirror-search-replace`
+* CodeMirror Show Trailing Space -- Show trailing space in CodeMirror -- `$:/plugins/tiddlywiki/codemirror-trailingspace`
+* Highlight -- Highlight.js syntax highlighting -- `$:/plugins/tiddlywiki/highlight`
 
 === Wiki Enhancement
 
-* https://github.com/kookma/TW-Shiraz[Shiraz] -- Admonitions and callouts
-* https://github.com/kookma/TW-Refnotes[Refnotes] -- References, citations, footnotes, and abbreviations
-* https://github.com/linonetwo/tiddlywiki-references[TiddlyStudy References] -- Bidirectional linking
-* https://github.com/linonetwo/TiddlyWeb[TiddlyWeb] -- Sync changes from browser to Node.js server or TiddlyWeb
-* https://github.com/linonetwo/wiki/relink[Relink] -- Smart relinking when renaming tiddlers
-* https://github.com/linonetwo/wiki/relink-titles[Relink Titles] -- Update tiddler titles derived from relinked tiddlers
+* Shiraz Callout -- Admonitions for Shiraz -- `$:/plugins/kookma/shiraz-callout`
+* Refnotes -- References, citations, footnotes and abbreviations in TiddlyWiki -- `$:/plugins/kookma/refnotes`
+* tiddlystudy-references -- bidirectional linking -- `$:/plugins/wsb/tiddlystudy-references`
+* TiddlyWeb -- Sync changes from the browser to TW5 (node.js) or TiddlyWeb server -- `$:/plugins/tiddlywiki/tiddlyweb`
+* Relink -- Flexibility when relinking renamed tiddlers -- `$:/plugins/flibbles/relink`
+* Relink Titles -- Renames tiddlers with titles derived from Relinked tiddler -- `$:/plugins/flibbles/relink-titles`
 
 === Fountain, Math & Formulas
 
-* https://github.com/kookma/TW-MathyThing[MathyThing] -- Basic math operations
-* https://github.com/adithya-badidey/katex[KaTeX] -- Mathematical typography using KaTeX
-* https://github.com/klaatu01/TW-formula[TiddlyFormula] -- Spreadsheet-like formulas
-* https://github.com/gabrielmontagne/tw-fountain[tw-fountain] -- Fountain screenplay support
+* MathyThing -- Some basic math operations for TiddlyWiki -- `$:/plugins/inmysocks/MathyThing`
+* KaTeX -- KaTeX library for mathematical typography -- `$:/plugins/tiddlywiki/katex`
+* TiddlyFormula -- Spreadsheet-like formulas in TiddlyWiki -- `$:/plugins/ebalster/formula`
+* tw-fountain -- Fountain screenplay support -- `$:/plugins/tm/tw-fountain`
 
 === Utilities
 
-* https://github.com/BurningTreeC/tiddlywiki-shuffle[Shuffle] -- Shuffle filter operator
-* https://github.com/BurningTreeC/tiddlywiki-details[Disclosure] -- HTML details widget
-* https://github.com/kookma/TW-Kara[Kara] -- Checklists and interstitial journaling
-* https://github.com/Jermolene/TiddlyWiki5/buttons[Edit Buttons] -- Save & close / Cancel & close / Save & keep open buttons
-* https://github.com/kookma/TW-Utility[Utility] -- Tools for authors and developers
+* shuffle -- A Shuffle filter operator -- `$:/plugins/midknighz/shuffle`
+* Disclosure HTML element -- DetailsWidget -- `$:/plugins/lslinger/details`
+* Kara -- Small plain checklist and interstitial journaling -- `$:/plugins/kookma/kara`
+* Edit Buttons -- Save & close / Cancel & close / Save & keep open -- `$:/plugins/lslinger/EditButtons`
+* Utility -- Small tools for authors and developers -- `$:/plugins/kookma/utility`
 
 === Project Management & Development
 
-* https://github.com/kookma/TW-Projectify[Projectify] -- Project management for TiddlyWiki
-* https://github.com/Jermolene/TiddlyWiki5/filesystem[Filesystem] -- Sync changes to local filesystem
-* https://github.com/Jermolene/TiddlyWiki5/ImportToExternalFile[ImportToExternalFile] -- Save binary files to the files folder
+* Projectify -- Simple and Beautiful project management in TiddlyWiki -- `$:/plugins/nico/projectify`
+* Filesystem -- Synchronize changes from the node.js server to the local filesystem -- `$:/plugins/tiddlywiki/filesystem`
+* ImportToExternalFile -- Save binary files to the files folder on node.js -- `$:/plugins/sq/ImportToExternalFile`
+
