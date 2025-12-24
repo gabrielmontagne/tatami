@@ -44,11 +44,12 @@ This will serve the wiki on http://localhost:8085
 * https://github.com/linonetwo/wiki/relink[Relink] -- Smart relinking when renaming tiddlers
 * https://github.com/linonetwo/wiki/relink-titles[Relink Titles] -- Update tiddler titles derived from relinked tiddlers
 
-=== Math & Formulas
+=== Fountain, Math & Formulas
 
 * https://github.com/kookma/TW-MathyThing[MathyThing] -- Basic math operations
 * https://github.com/adithya-badidey/katex[KaTeX] -- Mathematical typography using KaTeX
 * https://github.com/klaatu01/TW-formula[TiddlyFormula] -- Spreadsheet-like formulas
+* https://github.com/gabrielmontagne/tw-fountain[tw-fountain] -- Fountain screenplay support
 
 === Utilities
 
