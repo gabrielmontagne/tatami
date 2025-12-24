@@ -1,0 +1,11 @@
+created: 20250406180723218
+modified: 20250406180724715
+tags: $:/tags/SideBarSegment
+title: $:/core/ui/SideBarSegments/tabs
+type: text/vnd.tiddlywiki
+
+<div class="tc-sidebar-lists tc-sidebar-tabs" role="region" aria-label={{$:/language/SideBar/Caption}}>
+
+<$macrocall $name="tabs" tabsList="[all[shadows+tiddlers]tag[$:/tags/SideBar]!has[draft.of]]" default={{$:/config/DefaultSidebarTab}} state="$:/state/tab/sidebar" class="tc-sidebar-tabs-main" explicitState="$:/state/tab/sidebar--595412856"/>
+
+</div>
