@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jot</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; }
+body { display: flex; flex-direction: column; padding: 8px; }
+input { width: 100%; margin-bottom: 8px; }
+textarea { flex: 1; width: 100%; resize: none; }
+button { margin-top: 8px; }
+#feedback { margin-top: 8px; }
+</style>
+</head>
+<body>
+<input type="text" id="title" placeholder="Title (auto-generates if empty)">
+<input type="text" id="tags" placeholder="Additional tags (optional)">
+<textarea id="text" placeholder="Text"></textarea>
+<button id="save">Save</button>
+<div id="feedback"></div>
+
+<script>
+const API_BASE = window.location.origin;
+
+function slugify(text) {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
+function getReadableTimestamp() {
+  const now = new Date();
+  return now.toLocaleString('sv-SE', { 
+    year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', second: '2-digit',
+    hour12: false
+  }).replace(',', '');
+}
+
+function getTWTimestamp() {
+  return new Date().toISOString().replace(/[-:T.Z]/g, '').slice(0, 17);
+}
+
+async function saveTiddler() {
+  const titleInput = document.getElementById('title');
+  const tagsInput = document.getElementById('tags');
+  const textInput = document.getElementById('text');
+  const feedback = document.getElementById('feedback');
+  
+  const readable = getReadableTimestamp();
+  const title = titleInput.value.trim() || `ж ${readable}`;
+  const additionalTags = tagsInput.value.trim();
+  const text = textInput.value;
+  const timestamp = getTWTimestamp();
+  
+  const tags = additionalTags ? `[[Jot]] ${additionalTags}` : '[[Jot]]';
+  
+  const draftTitle = `Draft of '${title}'`;
+  
+  const payload = {
+    'draft.of': title,
+    'title': draftTitle,
+    'draft.title': title,
+    'tags': tags,
+    'type': 'text/vnd.tiddlywiki',
+    'text': text,
+    'created': timestamp
+  };
+  
+  const url = `${API_BASE}/recipes/default/tiddlers/${encodeURIComponent(draftTitle)}`;
+  
+  try {
+    const response = await fetch(url, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Requested-With': 'TiddlyWiki'
+      },
+      body: JSON.stringify(payload)
+    });
+    
+    if (response.status === 204) {
+      const tiddlerUrl = `${API_BASE}/#${encodeURIComponent(draftTitle)}`;
+      feedback.innerHTML = `Tiddler '${title}' created<br><a href="${tiddlerUrl}">${tiddlerUrl}</a>`;
+      
+      titleInput.value = '';
+      tagsInput.value = '';
+      textInput.value = '';
+    } else {
+      feedback.textContent = `Error: ${response.status} ${response.statusText}`;
+    }
+  } catch (error) {
+    feedback.textContent = `Error: ${error.message}`;
+  }
+}
+
+document.getElementById('save').addEventListener('click', saveTiddler);
+document.getElementById('text').addEventListener('keydown', (e) => {
+  if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') {
+    saveTiddler();
+  }
+});
+</script>
+</body>
+</html>
